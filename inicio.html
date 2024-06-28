@@ -19,7 +19,6 @@
             </ul>
         </nav>
         <div class="navbar-brand">
-
             Tekilatlakpan Centro Ecoturístico
         </div>
     </header>
@@ -30,7 +29,7 @@
                 <p>Un lugar muy bien conservado, con áreas verdes, juegos y senderos muy bien trazados que te llevan a la cima o hacia alguno de sus sótanos. En el camino encontrarás plantas, árboles, aves y flores que te alegran la vista.</p>
             </div>
             <div class="video">
-                <video controls loop>
+                <video id="miVideo" controls loop autoplay muted>
                     <source src="src/VID-20240516-WA0006.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
@@ -38,5 +37,13 @@
         </div>
         <button class="back-button" onclick="window.location.href='index.html'">Regresar a la presentación</button>
     </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('miVideo');
+            video.volume = 0.5; // Establecer el volumen al 50%
+            video.play();
+        });
+    </script>
 </body>
 </html>

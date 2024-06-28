@@ -10,7 +10,6 @@
 <body>
     <header>
         <nav>
-
             <ul>
                 <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="#">Atractivos</a></li>
@@ -35,13 +34,20 @@
                 </ul>
             </div>
             <div class="video">
-                <video controls loop>
+                <video id="miVideo" controls loop autoplay muted>
                     <source src="src/VID-20240516-WA0008.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </div>
         </div>
-        
     </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('miVideo');
+            video.volume = 0.5; // Establecer el volumen al 50%
+            video.play();
+        });
+    </script>
 </body>
 </html>

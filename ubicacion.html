@@ -33,13 +33,20 @@
                 <p>Se encuentra localizado en la carretera Orizaba-Zongolica, km. 32 localidad de Zacatlamanca. Desde el sitio puedes observar hacia La cabecera Municipal de Tequila y al fondo el Pico de Orizaba, hacia el lado oriente tendrás una hermosa vista de la Sierra de Zongolica.</p>
             </div>
             <div class="video">
-                <video controls>
+                <video id="ubicacionVideo" controls autoplay muted>
                     <source src="src/e58b0d29c9fd10e1d9f1cf485497e8ea.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('ubicacionVideo');
+            video.volume = 0.5; // Establecer el volumen al 50%
+            video.play();
+        });
+    </script>
 </body>
 
 </html>
