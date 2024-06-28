@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f8ff; /* Fondo suave que combina con paisajes */
+            background-image: url('');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #333; /* Color de texto principal */
+        }
+
+        
+        /* Estilos para el encabezado y la barra de navegación */
+        header {
+            background-color: #000000d7; /* Color oscuro que contrasta bien */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: right;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffffffbd;
+        }
+
+        .navbar-brand {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        /* Estilos para el contenido principal */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor legibilidad */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .description {
+            flex: 1;
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: left;
+            color: #fff; /* Texto blanco para contraste */
+        }
+
+        /* Estilos para los elementos de contacto */
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info img {
+            margin-right: 10px;
+            vertical-align: middle;
+            max-width: 30px;
+            max-height: 30px;
+        }
+
+        /* Estilos para el enlace de Facebook */
+        .contact-info a.facebook {
+            display: block;
+            color: #3b5998; /* Color de Facebook */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a.facebook:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                left: 10px;
+                font-size: 1em;
+            }
+
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="atractivos.html">Atractivos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="#">Contacto</a></li> <!-- Página actual -->
+            </ul>
+        </nav>
+        <div class="navbar-brand">
+            Tekilatlakpan Centro Ecoturístico
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="description">
+                <h1>Contacto</h1>
+                <div class="contact-info">
+                    <p><img src="https://img.icons8.com/ios/50/000000/phone.png" alt="Teléfono"> Teléfono: 2722297244</p>
+                    <p><img src="https://img.icons8.com/ios/50/000000/email.png" alt="E-Mail"> E-Mail: <a href="mailto:colli_64@hotmail.com">colli_64@hotmail.com</a></p>
+                    <p><img src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook"> Facebook: <a class="facebook" href="https://www.facebook.com/Tekilatlakpan-2070339443181713">Tekilatlakpan en Facebook</a></p>
+                </div>
+            </div>
+            <div class="video">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
